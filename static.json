@@ -1,0 +1,8 @@
+{
+ "headers": {
+   "/*": {
+     "X-Author": "vera-babich",
+     "Access-Control-Allow-Origin": "*"
+   }
+ }  
+}
