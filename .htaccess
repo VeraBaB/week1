@@ -1,1 +1,1 @@
-Redirect301/ http://testweek1.herokuapp.com/login/
+RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} ^testweek1\.herokuapp\.com$ RewriteCond %{REQUEST_URI} !/login/ RewriteRule ^(.*)$ /login/$1[L]
