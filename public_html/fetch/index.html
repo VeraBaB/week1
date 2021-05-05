@@ -7,7 +7,6 @@
 <script>    
   function myFunction() {
   const val = document.getElementById("inp").value;
-  console.log(typeof val);
   fetch (val).then((response) => {
     if (response.ok()) {
     document.getElementById("inp").value = response.json();
