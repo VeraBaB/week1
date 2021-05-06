@@ -3,7 +3,7 @@
    "/*": {
      "X-Author": "vera-babich"     
    },
-   "/*/*": {
+   "/public_html/*": {
      "Access-Control-Allow-Origin": "*"
    },
    "/login/*": {
