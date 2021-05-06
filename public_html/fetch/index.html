@@ -7,11 +7,14 @@
 <script>    
   function myFunction() {
   const val = document.getElementById("inp").value;
-  fetch(`${val}`, {
-    mode: 'no-cors'            
-  })
-   .then((response) => {
-     return document.getElementById("inp").value = response.text;
+  fetch(`${val}`)
+   .then((res) => {
+     return res.text()
+     .then((data) => {
+     console.log(data);
+     return document.getElementById("inp").value = data;
+   })
+   .catch(err => console.log(err))
    })
 }
 </script>
