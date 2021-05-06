@@ -2,16 +2,17 @@
 <html>
 <body>
 <br><br>
-<input type="text" id="inp" maxlength="225" required><br><br>
+<input type="text" id="inp" maxlength="1000" required><br><br>
 <input type="button" id="bt" onclick="myFunction()" value="Click"> <br>
 <script>    
   function myFunction() {
   const val = document.getElementById("inp").value;
-  fetch (val).then((response) => {
-    if (response.ok()) {
-    document.getElementById("inp").value = response.json();
-    }
-  }) 
+  fetch(`${val}`, {
+    mode: 'no-cors'            
+  })
+   .then((response) => {
+     return document.getElementById("inp").value = response.text;
+   })
 }
 </script>
  
