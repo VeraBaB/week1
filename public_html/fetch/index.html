@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<br><br>
-<input type="text" id="inp" maxlength="1000" required><br><br>
-<input type="button" id="bt" onclick="myFunction()" value="Click"> <br>
-<script>    
-  function myFunction() {
-  const val = document.getElementById("inp").value;
-  fetch(`${val}`)
-   .then((res) => {
-     return res.text()
-     .then((data) => {
-     console.log(data);
-     return document.getElementById("inp").value = data;
-   })
-   .catch(err => console.log(err))
-   })
-}
-</script>
- 
+    <br><br>
+    <input type="text" id="inp" maxlength="1000" required><br><br>
+    <input type="button" id="bt" onclick="myFunction()" value="Click"> <br>
+    <script>
+        function myFunction() {
+            const val = document.getElementById("inp").value;
+            fetch(`${val}`)
+            .then((res) => {
+                return res.text()
+                .then((data) => {
+                    return document.getElementById("inp").value = data;
+                })
+                .catch(err => console.log(err));
+            })
+        }
+    </script>
+
 </body>
+
 </html>
