@@ -1,2 +1,2 @@
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ http://www.danielmorell.com/$1 [L,R=301]
+RewriteRule ^(.*)/$ https://testweek1.herokuapp.com/$1 [L,R=301]
