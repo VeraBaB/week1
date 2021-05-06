@@ -1,7 +1,8 @@
 {
  "headers": {
    "/*": {
-     "X-Author": "vera-babich"     
+     "X-Author": "vera-babich",
+     "Access-Control-Allow-Origin": "*"
    },
    "/public_html/*": {
      "Access-Control-Allow-Origin": "*"
